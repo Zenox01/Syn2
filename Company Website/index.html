@@ -1,0 +1,1367 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+	
+		<title>Company</title>
+		
+		
+		<link rel="shortcut icon" href="S.png" rel="icon">
+		
+	<link rel="stylesheet" media="all" href="css/jumbo.css">
+   <link href="css/page3.css" rel="stylesheet" id="bootstrap-css"> 
+		
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+
+
+<link rel="stylesheet" href="css/Xplugins.css">
+<link rel="stylesheet" href="css/Xeonecss.css">
+<link rel="stylesheet" href="css/P3style.css">
+  </head>
+	<style>
+.spinner {
+  width: 40px;
+  height: 40px;
+
+  position: relative;
+  margin: 100px auto;
+}
+
+.double-bounce1, .double-bounce2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #333;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+  animation: sk-bounce 2.0s infinite ease-in-out;
+}
+
+.double-bounce2 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+@-webkit-keyframes sk-bounce {
+  0%, 100% { -webkit-transform: scale(0.0) }
+  50% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bounce {
+  0%, 100% { 
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 50% { 
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}
+
+.PContainer{
+padding: 20px;
+margin:1%;
+}
+
+.fly-in-text{
+
+                list-style:none;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translateX(-50%) translateY(-50%);
+            }
+            .fly-in-text {
+                   display: inline-block;
+                margin-right: 50px;
+                font-family: Open Sans, Arial;
+                font-weight: 300;
+                font-size: 4em;
+                color: #fffpage`
+                     opacity: 1;
+                transition: all 2.5s ease;
+            }
+            .fly-in-text li:last-child {
+                margin-right: 0;
+            }
+            .fly-in-text.hidden li{
+                opacity: 0;
+            }
+            .fly-in-text.hidden li:nth-child(1){ transform: translateX(-200px) translateY(-200px); }
+            .fly-in-text.hidden li:nth-child(2) { transform: translateX(20px) translateY(100px); }
+            .fly-in-text.hidden li:nth-child(3) { transform: translateX(-150px) translateY(-80px); }
+            .fly-in-text.hidden li:nth-child(4) { transform: translateX(10px) translateY(-200px); }
+            .fly-in-text.hidden li:nth-child(5) { transform: translateX(-300px) translateY(200px); }
+            .fly-in-text.hidden li:nth-child(6) { transform: translateX(20px) translateY(-20px); }
+            .fly-in-text.hidden li:nth-child(7) { transform: translateX(30px) translateY(200px); }
+            .fly-in-text.hidden li:nth-child(8) { transform: translateX(30px) translateY(200px); }
+            
+            
+#pinContainer {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+    -webkit-perspective: 1000;
+    perspective: 1000;
+}
+    #slideContainer {
+        width: 400%;
+    height: 100%;
+    position: absolute;
+}
+
+.page1, .page2, .page3, .page4  {
+    height: 100%;
+        width: 25%;
+    position: absolute;
+    overflow: hidden;
+
+
+    
+  top: 0;
+}
+
+
+@-webkit-keyframes Gradient {
+   0% {
+      background-position: 0% 50%
+   }
+   50% {
+      background-position: 100% 50%
+   }
+   100% {
+      background-position: 0% 50%
+   }
+}
+
+@-moz-keyframes Gradient {
+   0% {
+      background-position: 0% 50%
+   }
+   50% {
+      background-position: 100% 50%
+   }
+   100% {
+      background-position: 0% 50%
+   }
+}
+
+@keyframes Gradient {
+   0% {
+      background-position: 0% 50%
+   }
+   50% {
+      background-position: 100% 50%
+   }
+   100% {
+      background-position: 0% 50%
+   }
+}
+    .page1 {
+     background: linear-gradient(-45deg,#110626, #40247a, #4893C6,#01bcd4);
+     
+
+
+ 
+}
+
+.fade-in{
+   font-size:100px; 
+  color:#40E0D0;
+   margin-top:15%;
+   text-align: center;
+
+}
+    .page2 {
+    background-image: linear-gradient(45deg,#110626 ,#40247a,#01bcd4);
+    color:#e8eeff;
+   left:25%;
+}
+
+.page3{
+    background-color: #DDECCC; 
+    color:#82d9f2;
+   left: 50%;
+}
+
+.page4{
+    background-image: linear-gradient(to right ,#4C5F96,#40247a);
+    left: 75%;
+
+  
+}
+
+</style>
+	
+
+	
+
+     <div class="loader">
+        <div class="loader__inside">
+           
+        </div>
+      </div>
+     
+      <!-- header -->
+<header class="site-header">
+   <nav class="navbar navbar-expand-lg center-brand static-nav">
+      <div class="container">
+         <a class="navbar-brand" href="index.html">
+         <img src="logo.png" alt="logo" class="logo-default">
+         <img src="S.png" style="height: 60px; width: 80px;" alt="logo" class="logo-scrolled">
+         </a>
+         <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#xenav">
+            <span> </span>
+            <span> </span>
+            <span> </span>
+         </button>
+         <div class="collapse navbar-collapse" id="xenav">
+            <ul class="navbar-nav" id="container">
+               <li class="nav-item">
+                  <a class="nav-link pagescroll" href="#banner-main">Home</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link pagescroll" href="#our-process">Features</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link pagescroll" href="#our-team">Team</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link pagescroll" href="#portfolio_top">Portfolio</a>
+               </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+               <li class="nav-item">
+                  <a class="nav-link pagescroll" href="#our-pricings">Packages</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link pagescroll" href="#our-testimonial">Clients</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link pagescroll" href="#our-blog">Blog</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link pagescroll" href="#contactus">contact  </a>
+               </li>
+            </ul>
+         </div>
+      </div>
+
+      <!--side menu open button-->
+      <a href="javascript:void(0)" class="d-none d-lg-inline-block sidemenu_btn" id="sidemenu_toggle">
+          <span></span> <span></span> <span></span>
+       </a>
+   </nav>
+
+   <!-- side menu -->
+   <div class="side-menu">
+      <div class="inner-wrapper">
+         <span class="btn-close" id="btn_sideNavClose"><i></i><i></i></span>
+         <nav class="side-nav w-100">
+            <ul class="navbar-nav">
+               <li class="nav-item">
+                  <a class="nav-link pagescroll" href="#banner-main">Home</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link pagescroll" href="#our-process">Features</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link pagescroll" href="#our-team">Team</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link pagescroll" href="#portfolio_top">Portfolio</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link pagescroll" href="#our-pricings">Packages</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link pagescroll" href="#our-testimonial">Clients</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link pagescroll" href="#our-blog">Blog</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link pagescroll" href="#contactus">contact</a>
+               </li>
+            </ul>
+         </nav>
+
+       <!--  <div class="side-footer w-100">
+            <ul class="social-icons-simple white top40">
+               <li><a href="javascript:void(0)"><i class="fa fa-facebook"></i> </a> </li>
+               <li><a href="javascript:void(0)"><i class="fa fa-instagram"></i> </a> </li>
+               <li><a href="javascript:void(0)"><i class="fa fa-twitter"></i> </a> </li>
+            </ul>
+            <p class="whitecolor">&copy; 2018 XeOne. Made With Love by themesindustry</p>
+         </div>-->
+      </div>
+   </div>
+   <a id="close_side_menu" href="javascript:void(0);"></a>
+   <!-- End side menu -->
+</header>
+<!-- header -->
+
+
+      <!-- end header -->
+      <body data-spy="scroll" data-target=".navbar" data-offset="90">
+      <!-- begin hero  -->
+      <div id="test" class="hero">
+  
+      		<div style="margin-top: -10vh;">
+			<svg height="300" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+				 viewBox="0 0 404.7 354" enable-background="new 0 0 404.7 354" id="hi-there" onclick="hi.reset().play();">
+
+				<!-- HI -->
+				<path fill="none" data-duration="10" stroke="#FFFFFF" stroke-width="4" d="M324.6,61.2c16.6,0,29.5-12.9,29.5-29.5c0-16.6-12.9-29.5-29.5-29.5c-16.6,0-29.5,12.9-29.5,29.5C295.1,48.4,308,61.2,324.6,61.2z"/>
+        <path fill="none" data-duration="130" stroke="#FFFFFF" stroke-width="4" d="M366.2,204.2c-9.8,0-15-5.6-15-15.1V77.2h-85v28h19.5c9.8,0,8.5,2.1,8.5,11.6v72.4c0,9.5,0.5,15.1-9.3,15.1H277h-20.7c-8.5,0-14.2-4.1-14.2-12.9V52.4c0-8.5,5.7-12.3,14.2-12.3h18.8v-28h-127v28h18.1c8.5,0,9.9,2.1,9.9,8.9v56.1h-75V53.4c0-11.5,8.6-13.3,17-13.3h11v-28H2.2v28h26c8.5,0,12,2.1,12,7.9v142.2c0,8.5-3.6,13.9-12,13.9h-21v33h122v-33h-11c-8.5,0-17-4.1-17-12.2v-57.8h75v58.4c0,9.1-1.4,11.6-9.9,11.6h-18.1v33h122.9h5.9h102.2v-33H366.2z"/>
+
+        <path fill="none" data-async data-delay="20" stroke="#FFFFFF" stroke-width="4" d="M358.8,82.8c11.1-4.2,18.8-14.7,18.8-27.5c0-8.5-3.4-16-8.9-21.3"/>
+				<path fill="none" data-async stroke="#FFFFFF" stroke-width="4" d="M124.2,105.7V77c0-11.5,9.1-13.8,17.5-13.8h10.5V44.7"/>
+				<polyline fill="none" data-async stroke="#FFFFFF" stroke-width="4" points="147.9,40.2 171.2,63.2 175.7,63.2"/>
+				<line fill="none" data-async stroke="#FFFFFF" stroke-width="4" x1="295.1" y1="32.1" x2="275.2" y2="12.2"/>
+				<path fill="none" data-async stroke="#FFFFFF" stroke-width="4" d="M266.2,204.7V75.9c0-8.5,5.2-12.8,13.7-12.8h18.3V44.7"/>
+				<polyline fill="none" data-async stroke="#FFFFFF" stroke-width="4" points="265.9,105.2 289.2,129.2 293.7,129.2"/>
+				<polyline fill="none" data-async stroke="#FFFFFF" stroke-width="4" points="374.2,204.7 374.2,94.2 358.8,82.8 351.2,77.2"/>
+				<polyline fill="none" data-async stroke="#FFFFFF" stroke-width="4" points="148.2,237.2 171.2,261.2 294.6,261.2 300.5,261.2 402.2,261.2 402.2,228.2 379.2,204.2"/>
+				<polyline fill="none" data-async stroke="#FFFFFF" stroke-width="4" points="124.2,204.7 124.2,157.2 175.7,157.2"/>
+				<line fill="none" data-async stroke="#FFFFFF" stroke-width="4" x1="147.7" y1="228.2" x2="129.2" y2="204.2"/>
+				<polyline fill="none" data-async stroke="#FFFFFF" stroke-width="4" points="7.2,237.3 30.2,261.2 152.2,261.2 152.2,241.7"/>
+				<polyline fill="none" data-async stroke="#FFFFFF" stroke-width="4" points="1.9,40.2 26,63.2 39.7,63.2"/>
+				<line fill="none" data-async stroke="#FFFFFF" stroke-width="4" x1="129.2" y1="12.2" x2="148.2" y2="33.2"/>
+				<line fill="none" data-async stroke="#FFFFFF" stroke-width="4" x1="303.9" y1="53" x2="328.1" y2="77.2"/>
+
+				<line fill="none" stroke="#FFFFFF" stroke-width="4" x1="345.1" y1="10.5" x2="368.7" y2="34"/>
+
+				<!-- there -->
+				
+			</svg>
+
+         
+		</div>
+      <h1 class="hero__title js-splitme">WE ARE <a style="color:cyan;">SYNDICATE</a></h1>
+         <p id="Sol">Solutions that <em id="Mat"> Matter</em></p>
+        
+        
+      
+  <!--<div class="arrow bounce">
+  <a class="fa fa-arrow-down fa-2x" href="#"></a>
+</div>--> <!--<div class="hero__action"> <a href="#" class="hero__start">START EXPLORING</a> </div>-->
+      </div>
+            <!-- end hero -->
+  
+     		
+		
+<!--half img section-->
+
+<div id="pinContainer">
+    <div id="slideContainer">
+        <section class="page1">
+              <div class="fade-in"><p class=fade-in style="font-size:100px ">S  E  R  V  I  C  E  S</p>
+               
+              </div>     
+            
+        </section>
+      <!-- Mobile Apps -->  
+<section class="page2">
+   <div class="PContainer">
+      <div class="row">
+         <div class="col-md-12 col-sm-12 text-center">
+            <div class="heading-title wow fadeInUp" data-wow-delay="300ms">
+               
+               <h2 class="darkcolor heading_space" style="margin-top: 30px;color:#adedff">Web and Mobile Solutions</h2>
+            </div>
+         </div>
+      </div>
+      <div class="row" id="app-feature">
+         <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="content-left clearfix">
+               <div class="feature-item left top30 bottom30 wow fadeInUp" data-wow-delay="300ms">
+                  <span class="icon"><i class="fa fa-mobile-phone"></i></span>
+                  <div class="text">
+                     <h4 style="color:#adedff">Responsive Design</h4>
+                     <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet</p>
+                  </div>
+               </div>
+               <div class="feature-item left top30 bottom30 wow fadeInUp" data-wow-delay="350ms">
+                  <span class="icon"><i class="fa fa-cog"></i></span>
+                  <div class="text">
+                     <h4 style="color:#adedff">Amazing Theme Options</h4>
+                     <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet</p>
+                  </div>
+               </div>
+               <div class="feature-item left top30 bottom30 wow fadeInUp" data-wow-delay="400ms">
+                  <span class="icon"><i class="fa fa-edit"></i></span>
+                  <div class="text">
+                     <h4 style="color:#adedff">Easy to Customize</h4>
+                     <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="image feature-item text-center  wow fadeIn" data-wow-delay="500ms">
+               <img src="http://www.themesindustry.com/html/xeone/images/responsive.png" alt="">
+            </div>
+         </div>
+         <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="content-right clearfix">
+               <div class="feature-item right top30 bottom30 wow fadeInUp" data-wow-delay="300ms">
+                  <span class="icon"><i class="fa fa-code"></i></span>
+                  <div class="text">
+                     <h4 style="color:#adedff">Powerful BackEnd</h4>
+                     <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet</p>
+                  </div>
+               </div>
+               <div class="feature-item right top30 bottom30 wow fadeInUp" data-wow-delay="350ms">
+                  <span class="icon"><i class="fa fa-folder-o"></i></span>
+                  <div class="text">
+                     <h4 style="color:#adedff">Well Documented</h4>
+                     <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet</p>
+                  </div>
+               </div>
+               <div class="feature-item right top30 bottom30 wow fadeInUp" data-wow-delay="400ms">
+                  <span class="icon"><i class="fa fa-support"></i></span>
+                  <div class="text">
+                     <h4 style="color:#adedff">24/7 Support</h4>
+                     <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>                                                                                 
+<!--Mobile Apps ends-->  
+        <section class="page3 row">
+            <div class="single-service-cata bg-img jarallax" style="background-image: url(img/bg-img/19.jpg); height:100%">
+            <p style="margin-top: 60%"><a href="#" style="color:white;">VR / AR<br> Solutions</a></p>
+         </div>  
+        <div class="single-service-cata bg-img  jarallax" style="background-image: url(img/bg-img/20.jpg);height:100%">
+          <p style="margin-top: 50% ">  <a href="#" style="color:white;">Artificial Intelligence <br>&<br> Machine Learning<br> Solutions</a></p>
+        </div>
+        <!-- Single Service Catagory -->
+        <div class="single-service-cata bg-img jarallax" style="background-image: url(img/bg-img/21.jpg);height:100%">
+       <p style="margin-top: 50%">     <a href="#" style="color:white;">UI/UX<br> Solutions</a></p>
+        </div>
+     
+        </section>
+        <!--pagee3 ends -->
+           
+            <section class="iq-features page4">
+            <div class="container">
+               <div class="row align-items-center">
+                  <div class="col-lg-3 col-md-12"></div>
+                  <div class="col-lg-6 col-md-12">
+                     <h2  style="margin-top: 10vh;color:white; margin-left:10vh;">Digital Branding</h2>
+                     <div class="holderCircle">
+                        <div class="round"></div>
+                        <div class="dotCircle">
+                           <span class="itemDot active itemDot1" data-tab="1">
+                           <i class="fa fa-clock-o"></i>
+                           <span class="forActive"></span>
+                           </span>
+                           <span class="itemDot itemDot2" data-tab="2">
+                           <i class="fa fa-comments"></i>
+                           <span class="forActive"></span>
+                           </span>
+                           <span class="itemDot itemDot3" data-tab="3">
+                           <i class="fa fa-user"></i>
+                           <span class="forActive"></span>
+                           </span>
+                           <span class="itemDot itemDot4" data-tab="4">
+                           <i class="fa fa-tags"></i>
+                           <span class="forActive"></span>
+                           </span>
+                           <span class="itemDot itemDot5" data-tab="5">
+                           <i class="fa fa-upload"></i>
+                           <span class="forActive"></span>
+                           </span>
+                           <span class="itemDot itemDot6" data-tab="6">
+                           <i class="fa fa-briefcase"></i>
+                           <span class="forActive"></span>
+                           </span>
+                        </div>
+                        <div class="contentCircle">
+                           <div class="CirItem title-box active CirItem1">
+                              <h2 class="title"><span>Corporate Identity Design</span></h2>
+                              <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                              <i class="fa fa-clock-o"></i>
+                           </div>
+                           <div class="CirItem title-box CirItem2">
+                              <h2 class="title"><span>Social Media Marketing </span></h2>
+                              <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                              <i class="fa fa-comments"></i>
+                           </div>
+                           <div class="CirItem title-box CirItem3">
+                              <h2 class="title"><span>Community Engagement</span></h2>
+                              <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                              <i class="fa fa-user"></i>
+                           </div>
+                           <div class="CirItem title-box CirItem4">
+                              <h2 class="title"><span>Chatbot Support</span></h2>
+                              <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                              <i class="fa fa-tags"></i>
+                           </div>
+                           <div class="CirItem title-box CirItem5">
+                              <h2 class="title"><span>Content Writing</span></h2>
+                              <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                              <i class="fa fa-upload"></i>
+                           </div>
+                           <div class="CirItem title-box CirItem6">
+                              <h2 class="title"><span>Support</span></h2>
+                              <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                              <i class="fa fa-briefcase"></i>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-12"></div>
+               </div>
+            </div>
+        </section>
+      
+    </div>
+</div>
+
+<!--half img section ends-->     
+   
+<!-- WOrk Process-->  
+<section id="our-process" class="padding gradient_bg_default">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-12 col-sm-12 text-center">
+            <div class="heading-title wow fadeInUp" data-wow-delay="300ms">
+               <h2 class="whitecolor">Work <span class="fontregular">Process</span> </h2>
+            </div>
+         </div>
+      </div>
+      <div class="row">
+         <ul class="process-wrapp">
+            <li class="whitecolor wow fadeIn" data-wow-delay="300ms">
+               <span class="pro-step bottom20">01</span>
+               <p class="fontbold bottom25">Concept</p>
+               <p>Quisque tellus risus, adipisci viverra bibendum urna.</p>
+            </li>
+            <li class="whitecolor wow fadeIn" data-wow-delay="400ms">
+               <span class="pro-step bottom20">02</span>
+               <p class="fontbold bottom25">Plan</p>
+               <p>Quisque tellus risus, adipisci viverra bibendum urna.</p>
+            </li>
+            <li class="whitecolor wow fadeIn" data-wow-delay="500ms">
+               <span class="pro-step bottom20">03</span>
+               <p class="fontbold bottom25">Design</p>
+               <p>Quisque tellus risus, adipisci viverra bibendum urna.</p>
+            </li>
+            <li class="whitecolor wow fadeIn" data-wow-delay="600ms">
+               <span class="pro-step bottom20">04</span>
+               <p class="fontbold bottom25">Development</p>
+               <p>Quisque tellus risus, adipisci viverra bibendum urna.</p>
+            </li>
+            <li class="whitecolor wow fadeIn" data-wow-delay="700ms">
+               <span class="pro-step bottom20">05</span>
+               <p class="fontbold bottom25">Quality Check</p>
+               <p>Quisque tellus risus, adipisci viverra bibendum urna.</p>
+            </li>
+         </ul>
+      </div>
+   </div>
+</section>
+<!--WOrk Process ends-->
+
+<!-- Our Team-->    
+<section id="our-team" class="padding bglight">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-8 offset-md-2 col-sm-12 text-center">
+            <div class="heading-title wow fadeInUp" data-wow-delay="300ms">
+               <span>Heros Behind the Company</span>
+               <h2 class="darkcolor bottom20">Creative Team</h2>
+               <p class="heading_space">Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. Nam porttitor justo sed mi finibus, vel tristique risus faucibus. </p>
+            </div>
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-md-12">
+            <div id="ourteam-slider" class="owl-carousel">
+               <div class="item">
+                  <div class="team-box wow fadeInUp" data-wow-delay="300ms">
+                     <div class="image">
+                        <img src="http://www.themesindustry.com/html/xeone/images/team-1.jpg" alt="">
+                     </div>
+                     <div class="team-content gradient_bg whitecolor">
+                        <h3>Johny Walkin.</h3>
+                        <p class="bottom40">CEO, The XeOne Company</p>
+                        <div class="progress-bars">
+                           <div class="progress">
+                              <p>Marketing online</p>
+                              <div class="progress-bar" data-value="90"><span>90%</span></div>
+                           </div>
+                           <div class="progress">
+                              <p>Web Designing</p>
+                              <div class="progress-bar" data-value="75"><span>75%</span></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="item">
+                  <div class="team-box wow fadeInUp" data-wow-delay="350ms">
+                     <div class="image">
+                        <img src="http://www.themesindustry.com/html/xeone/images/team-2.jpg" alt="">
+                     </div>
+                     <div class="team-content gradient_bg_default whitecolor">
+                        <h3>Johny Walkin.</h3>
+                        <p class="bottom40">Designer, The XeOne Company</p>
+                        <div class="progress-bars">
+                           <div class="progress">
+                              <p>Web Designing</p>
+                              <div class="progress-bar" data-value="75"><span>75%</span></div>
+                           </div>
+                           <div class="progress">
+                              <p>Marketing online</p>
+                              <div class="progress-bar" data-value="90"><span>90%</span></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="item">
+                  <div class="team-box single wow fadeInUp" data-wow-delay="400ms">
+                     <div class="image">
+                        <img src="http://www.themesindustry.com/html/xeone/images/team-3.jpg" alt="">
+                     </div>
+                     <div class="team-content gradient_bg whitecolor">
+                        <h3>Teena Walkin</h3>
+                        <p class="bottom40">Model, The XeOne Company</p>
+                        <div class="progress-bars">
+                           <div class="progress">
+                              <p>Fashion Designing</p>
+                              <div class="progress-bar" data-value="80"><span>80%</span></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="item">
+                  <div class="team-box wow fadeInUp" data-wow-delay="300ms">
+                     <div class="image">
+                        <img src="http://www.themesindustry.com/html/xeone/images/team-1.jpg" alt="">
+                     </div>
+                     <div class="team-content gradient_bg whitecolor">
+                        <h3>Johny Walkin.</h3>
+                        <p class="bottom40">CEO, The XeOne Company</p>
+                        <div class="progress-bars">
+                           <div class="progress">
+                              <p>Marketing online</p>
+                              <div class="progress-bar" data-value="90"><span>90%</span></div>
+                           </div>
+                           <div class="progress">
+                              <p>Web Designing</p>
+                              <div class="progress-bar" data-value="75"><span>75%</span></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="item">
+                  <div class="team-box wow fadeInUp" data-wow-delay="350ms">
+                     <div class="image">
+                        <img src="http://www.themesindustry.com/html/xeone/images/team-2.jpg" alt="">
+                     </div>
+                     <div class="team-content gradient_bg_default whitecolor">
+                        <h3>Johny Walkin.</h3>
+                        <p class="bottom40">Designer, The XeOne Company</p>
+                        <div class="progress-bars">
+                           <div class="progress">
+                              <p>Web Designing</p>
+                              <div class="progress-bar" data-value="75"><span>75%</span></div>
+                           </div>
+                           <div class="progress">
+                              <p>Marketing online</p>
+                              <div class="progress-bar" data-value="90"><span>90%</span></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="item">
+                  <div class="team-box wow fadeInUp" data-wow-delay="400ms">
+                     <div class="image">
+                        <img src="http://www.themesindustry.com/html/xeone/images/team-3.jpg" alt="">
+                     </div>
+                     <div class="team-content gradient_bg whitecolor">
+                        <h3>Teena Walkin</h3>
+                        <p class="bottom40">Model, The XeOne Company</p>
+                        <div class="progress-bars">
+                           <div class="progress">
+                              <p>Fashion Designing</p>
+                              <div class="progress-bar" data-value="80"><span>80%</span></div>
+                           </div>
+                           <div class="progress">
+                              <p>Marketing online</p>
+                              <div class="progress-bar" data-value="90"><span>90%</span></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+<!-- Our Team ends--> 
+     
+<!--Some Feature -->  
+<!--
+<section id="our-feature" class="padding single-feature">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-6 col-sm-7 text-md-left text-center wow fadeInLeft" data-wow-delay="300ms">
+            <div class="heading-title heading_space">
+               <span>Service We Offer</span>  
+               <h2 class="darkcolor bottom30">Awesome Features</h2>
+            </div>
+            <p class="bottom35">Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. Nam porttitor justo sed mi finibus, vel tristique risus faucibus. </p>
+            <a href="#our-blog" class="button btnsecondary pagescroll">Our Blog</a>
+         </div>
+         <div class="col-md-6 col-sm-5 wow fadeInRight" data-wow-delay="350ms">
+            <div class="image top50"><img alt="SEO" src="http://www.themesindustry.com/html/xeone/images/awesome--feature.png"></div>
+         </div>
+      </div>
+   </div>
+</section>
+-->
+<!--Some Feature ends--> 
+
+ <!--Gallery-->
+ <!--
+<section id="portfolio_top" class="bglight">
+   <div class="container">
+      <div id="portfolio-measonry" class="cbp border-portfolio simple_overlay">
+         <div class="cbp-item itemshadow">
+            <img src="http://www.themesindustry.com/html/xeone/images/portfolio-1.jpg" alt="">
+            <div class="overlay center-block whitecolor">
+               <a class="plus" data-fancybox="gallery" href="http://www.themesindustry.com/html/xeone/images/portfolio-1.jpg"></a>
+               <h4 class="top30">Wood Work</h4>
+               <p>Small Portfolio Detail Here</p>
+            </div>
+         </div>
+         <div class="cbp-item">
+            <div class="text_wrap wow fadeIn" data-wow-delay="350ms">
+               <div class="heading-title text-center padding_top">
+                  <span>Portfolio Designs</span>
+                  <h2 class="darkcolor bottom10">Creative Work</h2>
+                  <p>Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc vitae diam eleifend,</p>
+               </div>
+            </div>
+         </div>
+         <div class="cbp-item itemshadow">
+            <img src="http://www.themesindustry.com/html/xeone/images/portfolio-2.jpg" alt="">
+            <div class="overlay center-block whitecolor">
+               <a class="plus" data-fancybox="gallery" href="https://www.youtube.com/watch?v=_sI_Ps7JSEk&amp;autoplay=1&amp;rel=0&amp;controls=0&amp;showinfo=0"></a>
+               <h4 class="top30">Wood Work</h4>
+               <p>Small Portfolio Detail Here</p>
+            </div>
+         </div>
+         <div class="cbp-item itemshadow">
+            <img src="http://www.themesindustry.com/html/xeone/images/portfolio-3.jpg" alt="">
+            <div class="overlay center-block whitecolor">
+               <a class="plus" data-fancybox="gallery" href="http://www.themesindustry.com/html/xeone/images/portfolio-3.jpg"></a>
+               <h4 class="top30">Wood Work</h4>
+               <p>Small Portfolio Detail Here</p>
+            </div>
+         </div>
+         <div class="cbp-item itemshadow">
+            <img src="http://www.themesindustry.com/html/xeone/images/portfolio-4.jpg" alt="">
+            <div class="overlay center-block whitecolor">
+               <a class="plus" data-fancybox="gallery" href="http://www.themesindustry.com/html/xeone/images/portfolio-4.jpg"></a>
+               <h4 class="top30">Wood Work</h4>
+               <p>Small Portfolio Detail Here</p>
+            </div>
+         </div>
+         <div class="cbp-item">
+            <div class="bottom-text">
+               <div class="cells  wow fadeIn" data-wow-delay="350ms">
+                  <p>We’ve Completed More Than </p>
+                  <h2 class="port_head gradient_text">682</h2>
+                  <p class="bottom15">projects for our amazing clients,</p>
+               </div>
+               <div class="cells wow fadeIn" data-wow-delay="350ms">
+                  <a href="http://www.themesindustry.com/html/xeone/gallery-detail.html" class="button btnsecondary btn-gradient-hvr">View All Work</a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+-->
+<!--Gallery ends -->         
+    
+    
+
+  
+        
+<!-- Counters -->  
+<section id="funfacts" class="padding_top fact-iconic gradient_bg">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-5 col-sm-12 margin_bottom whitecolor text-md-left text-center wow fadeInLeft" data-wow-delay="300ms">
+            <h3 class="bottom25">Our many years of experience in numbers</h3>
+            <p class="title">We show you our professional achievements in numbers, which show the acquired skills and trust of many clients.</p>
+         </div>
+         <div class="col-md-7 col-sm-12 text-center">
+            <div class="row">
+               <div class="col-md-4 col-sm-4 icon-counters whitecolor margin_bottom  wow fadeInRight" data-wow-delay="400ms">
+                  <div class="img-icon bottom15">
+                     <i class="fa fa-smile-o"></i>
+                  </div>
+                  <div class="counters">
+                     <span class="count_nums" data-to="2500" data-speed="2500"> </span> <i class="fa fa-plus"></i>
+                  </div>
+                  <p class="title">Satisfied customers</p>
+               </div>
+               <div class="col-md-4 col-sm-4 icon-counters whitecolor margin_bottom wow fadeInRight" data-wow-delay="350ms">
+                  <div class="img-icon bottom15">
+                     <i class="fa fa-language"> </i>
+                  </div>
+                  <div class="counters">
+                     <span class="count_nums" data-to="9500" data-speed="2500"> </span> <i class="fa fa-plus"></i>
+                  </div>
+                  <p class="title">Completed consultations</p>
+               </div>
+               <div class="col-md-4 col-sm-4 icon-counters whitecolor margin_bottom wow fadeInRight" data-wow-delay="300ms">
+                  <div class="img-icon bottom15">
+                     <i class="fa fa-desktop"></i>
+                  </div>
+                  <div class="counters">
+                     <span class="count_nums" data-to="6000" data-speed="2500"> </span> <i class="fa fa-plus"></i>
+                  </div>
+                  <p class="title">Carried out training</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+<!--Counters ends-->  
+  
+<!-- Our Packages -->  
+<!--
+<section id="our-pricings" class="padding bglight">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-8 offset-md-2 col-sm-12 text-center">
+            <div class="heading-title wow fadeInUp" data-wow-delay="300ms">
+               <span>Choose The Best One</span>
+               <h2 class="darkcolor bottom30">Our Packages</h2>
+               <p>Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. </p>
+            </div>
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-md-6 col-sm-12">
+            <div class="price-table top60 wow fadeIn" data-wow-delay="400ms">
+               <h3 class="bottom20 darkcolor">Starter Plan</h3>
+               <p>If you are a small business and you are interested in small rebranding then this is a perfect plan for you</p>
+               <div class="ammount">
+                  <h2 class="defaultcolor"><i class="fa fa-dollar"></i> 9.99 <span class="dur">/ month</span></h2>
+               </div>
+               <ul class="top20">
+                  <li><span>Designing a small brand</span></li>
+                  <li><span>Redesign the company logo</span></li>
+                  <li><span>New visual design of the website</span></li>
+                  <li><span>Deploying a website</span></li>
+                  <li class="not-support"><span>Studio and product photography</span></li>
+                  <li class="not-support"><span>Professional project support</span></li>
+                  <li class="not-support"><span>Support and care</span></li>
+               </ul>
+               <div class="clearfix"></div>
+               <a href=" " class="button btnprimary top50">Get Started </a>
+            </div>
+         </div>
+         <div class="col-md-6 col-sm-12">
+            <div class="price-table active top60 wow fadeIn" data-wow-delay="500ms">
+               <h3 class="bottom20 darkcolor">Business Plan</h3>
+               <p>If you are a small business and you are interested in small rebranding then this is a perfect plan for you</p>
+               <div class="ammount">
+                  <h2 class="defaultcolor"><i class="fa fa-dollar"></i> 29.99 <span class="dur">/ month</span></h2>
+               </div>
+               <ul class="top20">
+                  <li><span>Designing a small brand</span></li>
+                  <li><span>Redesign the company logo</span></li>
+                  <li><span>New visual design of the website</span></li>
+                  <li><span>Deploying a website</span></li>
+                  <li><span>Studio and product photography</span></li>
+                  <li><span>Professional project support</span></li>
+                  <li><span>Support and care</span></li>
+               </ul>
+               <div class="clearfix"></div>
+               <a href=" " class="button btnsecondary top50">Get Started </a>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+-->
+<!--Packages ends-->
+   
+
+  
+<!-- Testimonials -->  
+<section id="our-testimonial" class="padding">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-12 col-sm-12 text-center">
+            <div class="heading-title bottom30 wow fadeInUp" data-wow-delay="300ms">
+               <span>Testimonials</span>
+               <h2 class="darkcolor">What People Say</h2>
+            </div>
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-md-12 col-sm-12">
+            <div id="testimonial-slider" class="owl-carousel">
+               <div class="item">
+                  <div class="testimonial-wrapp">
+                     <span class="quoted"><i class="fa fa-quote-right"></i></span>
+                     <div class="testimonial-text">
+                        <p class="bottom40">Donec semper euismod nisi quis feugiat. Nullam finibus metus eget orci volutpat porta. Morbi quis arcu vulputate, dignissim mi ac, varius magna.</p>
+                     </div>
+                     <div class="testimonial-photo"><img alt="" src="http://www.themesindustry.com/html/xeone/images/testimonial-1.jpg"></div>
+                     <h4 class="darkcolor">David Raleway</h4>
+                     <small class="defaultcolor">Businessman</small>
+                  </div>
+               </div>
+               <div class="item">
+                  <div class="testimonial-wrapp">
+                     <span class="quoted"><i class="fa fa-quote-right"></i></span>
+                     <div class="testimonial-text">
+                        <p class="bottom40">Donec semper euismod nisi quis feugiat. Nullam finibus metus eget orci volutpat porta. Morbi quis arcu vulputate, dignissim mi ac, varius magna.</p>
+                     </div>
+                     <div class="testimonial-photo"><img alt="" src="http://www.themesindustry.com/html/xeone/images/testimonial-2.jpg"></div>
+                     <h4 class="darkcolor">Sam Billings</h4>
+                     <small class="defaultcolor">Businessman</small>
+                  </div>
+               </div>
+               <div class="item">
+                  <div class="testimonial-wrapp">
+                     <span class="quoted"><i class="fa fa-quote-right"></i></span>
+                     <div class="testimonial-text">
+                        <p class="bottom40">Donec semper euismod nisi quis feugiat. Nullam finibus metus eget orci volutpat porta. Morbi quis arcu vulputate, dignissim mi ac, varius magna.</p>
+
+                     </div>
+                     <div class="testimonial-photo"><img alt="" src="http://www.themesindustry.com/html/xeone/images/testimonial-3.jpg"></div>
+                     <h4 class="darkcolor">Jatinder Shahg</h4>
+                     <small class="defaultcolor">Businessman</small>
+                  </div>
+               </div>
+               <div class="item">
+                  <div class="testimonial-wrapp">
+                     <span class="quoted"><i class="fa fa-quote-right"></i></span>
+                     <div class="testimonial-text">
+                        <p class="bottom40">Donec semper euismod nisi quis feugiat. Nullam finibus metus eget orci volutpat porta. Morbi quis arcu vulputate, dignissim mi ac, varius magna.</p>
+                     </div>
+                     <div class="testimonial-photo"><img alt="" src="http://www.themesindustry.com/html/xeone/images/testimonial-1.jpg"></div>
+                     <h4 class="darkcolor">David Zucker</h4>
+                     <small class="defaultcolor">Businessman</small>
+                  </div>
+               </div>
+               <div class="item">
+                  <div class="testimonial-wrapp">
+                     <span class="quoted"><i class="fa fa-quote-right"></i></span>
+                     <div class="testimonial-text">
+                        <p class="bottom40">Donec semper euismod nisi quis feugiat. Nullam finibus metus eget orci volutpat porta. Morbi quis arcu vulputate, dignissim mi ac, varius magna.</p>
+                     </div>
+                     <div class="testimonial-photo"><img alt="" src="http://www.themesindustry.com/html/xeone/images/testimonial-2.jpg"></div>
+                     <h4 class="darkcolor">Akten Jansen</h4>
+                     <small class="defaultcolor">Businessman</small>
+                  </div>
+               </div>
+               <div class="item">
+                  <div class="testimonial-wrapp">
+                     <span class="quoted"><i class="fa fa-quote-right"></i></span>
+                     <div class="testimonial-text">
+                        <p class="bottom40">Donec semper euismod nisi quis feugiat. Nullam finibus metus eget orci volutpat porta. Morbi quis arcu vulputate, dignissim mi ac, varius magna.</p>
+                     </div>
+                     <div class="testimonial-photo"><img alt="" src="http://www.themesindustry.com/html/xeone/images/testimonial-3.jpg"></div>
+                     <h4 class="darkcolor">Doe Raleway</h4>
+                     <small class="defaultcolor">Businessman</small>
+                  </div>
+               </div>
+               <div class="item">
+                  <div class="testimonial-wrapp">
+                     <span class="quoted"><i class="fa fa-quote-right"></i></span>
+                     <div class="testimonial-text">
+                        <p class="bottom40">Donec semper euismod nisi quis feugiat. Nullam finibus metus eget orci volutpat porta. Morbi quis arcu vulputate, dignissim mi ac, varius magna.</p>
+                     </div>
+                     <div class="testimonial-photo"><img alt="" src="http://www.themesindustry.com/html/xeone/images/testimonial-1.jpg"></div>
+                     <h4 class="darkcolor">Shamoun Raleway</h4>
+                     <small class="defaultcolor">Businessman</small>
+                  </div>
+               </div>
+               <div class="item">
+                  <div class="testimonial-wrapp">
+                     <span class="quoted"><i class="fa fa-quote-right"></i></span>
+                     <div class="testimonial-text">
+                        <p class="bottom40">Donec semper euismod nisi quis feugiat. Nullam finibus metus eget orci volutpat porta. Morbi quis arcu vulputate, dignissim mi ac, varius magna.</p>
+                     </div>
+                     <div class="testimonial-photo"><img alt="" src="http://www.themesindustry.com/html/xeone/images/testimonial-3.jpg"></div>
+                     <h4 class="darkcolor">Albugdadi Raleway</h4>
+                     <small class="defaultcolor">Businessman</small>
+                  </div>
+               </div>
+               <div class="item">
+                  <div class="testimonial-wrapp">
+                     <span class="quoted"><i class="fa fa-quote-right"></i></span>
+                     <div class="testimonial-text">
+                        <p class="bottom40">Donec semper euismod nisi quis feugiat. Nullam finibus metus eget orci volutpat porta. Morbi quis arcu vulputate, dignissim mi ac, varius magna.</p>
+                     </div>
+                     <div class="testimonial-photo"><img alt="" src="http://www.themesindustry.com/html/xeone/images/testimonial-3.jpg"></div>
+                     <h4 class="darkcolor">Albugdadi Raleway</h4>
+                     <small class="defaultcolor">Businessman</small>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+<!--Testimonials Ends-->
+
+
+<!-- Partners -->  
+<!--
+<section id="logos" class="padding_bottom">
+   <div class="container">
+     <h3 class="invisible">hidden</h3>
+      <div class="row">
+         <div class="col-md-12 col-sm-12">
+            <div id="partners-slider" class="owl-carousel">
+               <div class="item">
+                  <div class="logo-item"> <img alt="" src="http://www.themesindustry.com/html/xeone/images/logo-1.png"></div>
+               </div>
+               <div class="item">
+                  <div class="logo-item"><img alt="" src="http://www.themesindustry.com/html/xeone/images/logo-2.png"></div>
+               </div>
+               <div class="item">
+                  <div class="logo-item"><img alt="" src="http://www.themesindustry.com/html/xeone/images/logo-3.png"></div>
+               </div>
+               <div class="item">
+                  <div class="logo-item"><img alt="" src="http://www.themesindustry.com/html/xeone/images/logo-4.png"></div>
+               </div>
+               <div class="item">
+                  <div class="logo-item"><img alt="" src="http://www.themesindustry.com/html/xeone/images/logo-5.png"></div>
+               </div>
+               <div class="item">
+                  <div class="logo-item"><img alt="" src="http://www.themesindustry.com/html/xeone/images/logo-1.png"></div>
+               </div>
+               <div class="item">
+                  <div class="logo-item"><img alt="" src="http://www.themesindustry.com/html/xeone/images/logo-2.png"></div>
+               </div>
+               <div class="item">
+                  <div class="logo-item"><img alt="" src="http://www.themesindustry.com/html/xeone/images/logo-3.png"></div>
+               </div>
+               <div class="item">
+                  <div class="logo-item"><img alt="" src="http://www.themesindustry.com/html/xeone/images/logo-4.png"></div>
+               </div>
+               <div class="item">
+                  <div class="logo-item"><img alt="" src="http://www.themesindustry.com/html/xeone/images/logo-5.png"></div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+-->
+<!--Partners Ends-->
+
+
+<!-- Our Blogs -->  
+<!--
+<section id="our-blog" class="half-section bglight">
+   <div class="container-fluid">
+      <div class="row">
+         <div class="col-md-6 col-sm-12 nopadding">
+            <div class="image hover-effect"><img src="http://www.themesindustry.com/html/xeone/images/split-blog.jpg" alt="our blog" class="equalheight"></div>
+         </div>
+         <div class="col-md-6 col-sm-12">
+            <div class="split-box text-center center-block equalheight container-padding">
+               <div class="heading-title padding_half">
+               <span class="wow fadeIn" data-wow-delay="300ms">Read Our News</span>
+               <h2 class="darkcolor bottom25 wow fadeIn" data-wow-delay="350ms">Latest Blog Post</h2>
+               <p class="heading_space wow fadeIn" data-wow-delay="400ms">Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. Nam porttitor justo sed mi finibus, vel tristique risus faucibus. </p>
+               <a href="http://www.themesindustry.com/html/xeone/blog.html" class="button btnsecondary wow fadeInUp" data-wow-delay="450ms">Read Full Story</a>
+            </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+-->
+<!--Our Blogs Ends-->
+     
+     
+<!-- Contact US -->  
+<section id="contactus" class="padding_top" style="  background: linear-gradient(-45deg,#110626, #40247a, #4893C6,#01bcd4);">
+   <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12">
+           <div class="heading-title heading_space wow fadeIn" data-wow-delay="300ms">
+               <span>Lets Get In Touch</span>
+               <h2 class="darkcolor">Contact XeOne</h2>
+            </div>
+        </div>
+         <div class="col-md-6 col-sm-12 margin_bottom wow fadeInUp" data-wow-delay="350ms">
+            <p>West is not just about graphic design; it's more than that. We offer integral communication services, and we're responsible for our process and results. We thank each client and their projects.</p>
+            <div class="row">
+               <div class="col-md-6 col-sm-6 our-address top40">
+                  <h5 class="bottom25">Our Address</h5>
+                  <p class="bottom15">123 Stree New York City , United States Of America. </p>
+                  <a class="pickus" href="#." data-text="Get Directions">Get Directions</a>
+               </div>
+               <div class="col-md-6 col-sm-6 our-address top40">
+                  <h5 class="bottom25">Our Phone</h5>
+                  <p class="bottom15">Office Telephone : 001 01085379709 <span class="block">
+                     Mobile : 001 63165370895
+                  </span> </p>
+                  <a class="pickus" href="#." data-text="Call Us">Call Us</a>
+               </div>
+               <div class="col-md-6 col-sm-6 our-address top40">
+                  <h5 class="bottom25">Our Email</h5>
+                  <p class="bottom15">Main Email : admin@website.com <span class="block">Inquiries : email@website.com</span> </p>
+                  <a class="pickus" href="#." data-text="Send a Message">Send a Message</a>
+               </div>
+               <div class="col-md-6 col-sm-6 our-address top40">
+                  <h5 class="bottom25">Our Support</h5>
+                  <p class="bottom15">Main Support : info@website.com <span>Sales : support@website</span> </p>
+                  <a class="pickus" href="#." data-text="Open a Ticket">Open a Ticket</a>
+               </div>
+            </div>
+         </div>
+         <div class="col-md-6 col-sm-12 margin_bottom">
+            <form class="getin_form wow fadeInUp" data-wow-delay="400ms" onsubmit="return false;">
+               <div class="row">
+
+                  <div class="col-sm-12" id="result"></div>
+
+                  <div class="col-md-6 col-sm-6">
+                     <div class="form-group bottom35">
+                        <input class="form-control" type="text" placeholder="First Name:" required id="first_name" name="first_name">
+                     </div>
+                  </div>
+                  <div class="col-md-6 col-sm-6">
+                     <div class="form-group bottom35">
+                        <input class="form-control" type="text" placeholder="Last Name:" required id="last_name" name="last_name">
+                     </div>
+                  </div>
+                  <div class="col-md-6 col-sm-6">
+                     <div class="form-group bottom35">
+                        <input class="form-control" type="email" placeholder="Email:" required id="email" name="email">
+                     </div>
+                  </div>
+                  <div class="col-md-6 col-sm-6">
+                     <div class="form-group bottom35">
+                        <input class="form-control" type="tel" placeholder="Phone:" id="phone" name="phone">
+                     </div>
+                  </div>
+                  <div class="col-md-12 col-sm-12">
+                     <div class="form-group bottom35">
+                        <textarea class="form-control" placeholder="Message" id="message" name="message"></textarea>
+                     </div>
+                  </div>
+                  <div class="col-sm-12">
+                     <button type="submit" class="button btnprimary" id="submit_btn">submit request</button>
+                  </div>
+               </div>
+            </form>
+         </div>
+      </div>
+   </div>
+
+   <!--Location Map here-->
+<!--
+   MAP
+<div id="map-container"></div>
+-->
+</section>
+<!--Contact US Ends-->                    
+<!--Site Footer Here<footer id="site-footer" class="padding_half">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-12 col-sm-12 text-center">
+            <ul class="social-icons bottom25 wow fadeInUp" data-wow-delay="300ms">
+               <li><a href="javascript:void(0)"><i class="fa fa-facebook"></i> </a> </li>
+               <li><a href="javascript:void(0)"><i class="fa fa-twitter"></i> </a> </li>
+               <li><a href="javascript:void(0)"><i class="fa fa-google-plus"></i> </a> </li>
+               <li><a href="javascript:void(0)"><i class="fa fa-linkedin"></i> </a> </li>
+               <li><a href="javascript:void(0)"><i class="fa fa-instagram"></i> </a> </li>
+               <li><a href="javascript:void(0)"><i class="fa fa-envelope-o"></i> </a> </li>
+            </ul>
+            <p class="copyrights wow fadeInUp" data-wow-delay="350ms"> &copy; 2019 XeOne. made with love by <a href="http://www.themesindustry.com/" target="_blank">themesindustry</a> </p>
+         </div>
+      </div>
+   </div>
+</footer>
+Footer ends-->   
+
+
+
+<!--XEONE JS-->
+
+<script src="js/jquery-3.1.1.min.js"></script>
+
+<!--Bootstrap Core-->
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<!--to view items on reach-->
+<script src="js/jquery.appear.js"></script>
+
+<!--Equal-Heights-->
+<script src="js/jquery.matchHeight-min.js"></script>
+
+<!--Owl Slider-->
+<script src="js/owl.carousel.min.js"></script>
+
+<!--number counters-->
+<script src="js/jquery-countTo.js"></script>
+ 
+<!--Parallax Background-->
+<script src="js/parallaxie.js"></script>
+  
+<!--Cubefolio Gallery-->
+<script src="js/jquery.cubeportfolio.min.js"></script>
+
+<!--FancyBox popup-->
+<script src="js/jquery.fancybox.min.js"></script>       
+
+<!-- Video Background-->
+<script src="http://www.themesindustry.com/html/xeone/js/jquery.background-video.js"></script>
+
+<!--TypeWriter-->
+<script src="js/typewriter.js"></script> 
+      
+<!--Particles-->
+<script src="js/particles.min.js"></script>            
+         
+<!--WOw animations-->
+<script src="js/wow.min.js"></script>
+            
+<!--Revolution SLider-->
+<script src="js/revolution/jquery.themepunch.tools.min.js"></script>
+<script src="js/revolution/jquery.themepunch.revolution.min.js"></script>
+<!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
+<script src="js/revolution/extensions/revolution.extension.actions.min.js"></script>
+<script src="js/revolution/extensions/revolution.extension.carousel.min.js"></script>
+<script src="js/revolution/extensions/revolution.extension.kenburn.min.js"></script>
+<script src="js/revolution/extensions/revolution.extension.layeranimation.min.js"></script>
+<script src="js/revolution/extensions/revolution.extension.migration.min.js"></script>
+<script src="js/revolution/extensions/revolution.extension.navigation.min.js"></script>
+<script src="js/revolution/extensions/revolution.extension.parallax.min.js"></script>
+<script src="js/revolution/extensions/revolution.extension.slideanims.min.js"></script>
+<script src="js/revolution/extensions/revolution.extension.video.min.js"></script>
+
+<!--Google Map API-->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJnKEvlwpyjXfS_h-J1Cne2fPMqeb44Mk"></script>
+<script src="js/functions.js"></script> 
+
+<script type="text/javascript" src="js/app.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/100/three.min.js"></script>
+<script src="https://www.vantajs.com/dist/vanta.net.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/vivus@latest/dist/vivus.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js">//----SCROLLMAGIC----</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/plugins/ScrollToPlugin.min.js"></script>
+<script src="js/ScrollMagic.js"></script>
+<script src="js/circleslider.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+ <script>
+   $(function () { // wait for document ready
+      // init
+      var controller = new ScrollMagic.Controller();
+
+      // define movement of panels
+      var wipeAnimation = new TimelineMax()
+         // animate to second panel
+         .to("#slideContainer", 0.5, {z: -150})    // move back in 3D space
+         .to("#slideContainer", 1,   {x: "-25%"})  // move in to first panel
+         .to("#slideContainer", 0.5, {z: 0})          // move back to origin in 3D space
+         // animate to third panel
+         .to("#slideContainer", 0.5, {z: -150, delay: 1})
+         .to("#slideContainer", 1,   {x: "-50%"})
+         .to("#slideContainer", 0.5, {z: 0})
+         // animate to forth panel
+         .to("#slideContainer", 0.5, {z: -150, delay: 1})
+         .to("#slideContainer", 1,   {x: "-75%"})
+         .to("#slideContainer", 0.5, {z: 0});
+
+      // create scene to pin and link animation
+      new ScrollMagic.Scene({
+            triggerElement: "#pinContainer",
+            triggerHook: "onLeave",
+            duration: "500%"
+         })
+         .setPin("#pinContainer")
+         .setTween(wipeAnimation)
+         .addIndicators() // add indicators (requires plugin)
+         .addTo(controller);
+   });
+</script>
+	
+		<script src="js/imagesloaded.pkgd.min.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+		<script src="js/charming.min.js"></script>
+
+		<script type="text/javascript">
+       VANTA.NET({
+  el: "#test",
+  color: 0x2d85e3,
+  backgroundColor: 0x120627,
+  points: 14.00,
+  maxDistance: 29.00,
+  spacing: 19.00
+})
+       </script>
+		<script>        var hi = new Vivus('hi-there', {type: 'scenario-sync', duration: 20, start: 'autostart', forceRender: false, dashGap: 20}, function () {
+            if (window.console) {
+              console.log('Animation finished. [log triggered from callback]');
+            }
+          }),
+          obt1 = new Vivus('obturateur1', {type: 'delayed', duration: 150}),
+          obt2 = new Vivus('obturateur2', {type: 'async', duration: 150}),
+          obt3 = new Vivus('obturateur3', {type: 'oneByOne', duration: 150}),
+          pola = new Vivus('polaroid', {type: 'scenario-sync', duration: 20, forceRender: false});</script>
+          <script>
+           var controller = new ScrollMagic.Controller();
+
+// loop through all elements
+$('.fade-in').each(function() {
+  
+  // build a tween
+  var tween = TweenMax.from($(this), 0.3, {autoAlpha: 0, scale: 0.5, y: '+=30', ease:Linear.easeNone});
+
+  // build a scene
+  var scene = new ScrollMagic.Scene({
+    triggerElement: this
+  })
+  .setTween(tween) // trigger a TweenMax.to tween
+  .addTo(controller);
+  
+});
+
+            
+        </script>
+
+
+         
+	</body>
+</html>

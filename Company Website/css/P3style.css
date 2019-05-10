@@ -1,0 +1,54 @@
+.single-service-cata {
+  position: relative;
+  z-index: 1;
+  height: 640px;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 33.33334%;
+  flex: 0 0 33.33334%;
+  max-width: 33.33334%;
+  width: 33.33334%;
+  text-align: center; }
+ 
+.single-service-cata::after {
+    -webkit-transition-duration: 500ms;
+    -o-transition-duration: 500ms;
+    transition-duration: 500ms;
+    content: '';
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(104, 139, 254, 0.5); }
+  .single-service-cata:hover::after {
+    background-color: rgba(64, 36 , 122, 0.8); }
+  .single-service-cata a {
+    font-size: 48px;
+    color: #ffffff; }
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+      .single-service-cata a {
+        font-size: 36px; } }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      .single-service-cata a {
+        font-size: 28px; } }
+    @media only screen and (max-width: 767px) {
+      .single-service-cata a {
+        font-size: 30px; } }
+.bg-img {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+.jarallax {
+  position: relative;
+  z-index: 0; }
+
+.jarallax > .jarallax-img {
+  position: absolute;
+  object-fit: cover;
+  font-family: 'object-fit: cover;';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; }
